@@ -302,7 +302,6 @@ Resources:
           SecurityGroups:
           - Ref: WebServerSecGroup
           InstanceType: t3.small
-          # KeyName: amazon-ec2  # uncomment to allow ssh
           IamInstanceProfile: !Ref ProfileWithRolesForOurApp
           BlockDeviceMappings:
           - DeviceName: "/dev/sdk"
